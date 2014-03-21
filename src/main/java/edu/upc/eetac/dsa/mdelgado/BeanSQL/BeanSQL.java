@@ -62,7 +62,6 @@ public String GetCDs(){
 		PreparedStatement stmt = null;
 		Connection conConexion = null;
 		DataSource ds = null;
-		ResultSet rsListaRegistros = null;
 		float amount = Float.parseFloat(total);
 		int cantidad = number;
 		
@@ -76,7 +75,6 @@ public String GetCDs(){
 		
 		try {
 			conConexion = ds.getConnection();
-			PreparedStatement scSQL = null;
 			String sql = "INSERT INTO Registro(Cantidad,Total) VALUES(?, ?)";
             stmt = conConexion.prepareStatement(sql);
             stmt.setInt(1,cantidad);

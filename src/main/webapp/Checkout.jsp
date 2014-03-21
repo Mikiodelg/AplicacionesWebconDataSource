@@ -24,6 +24,7 @@
   int discostotales = 0;
   for (int i=0; i < buylist.size();i++) {
    CD anOrder = (CD) buylist.elementAt(i);
+   discostotales = discostotales + anOrder.getQuantity();
  %>
  <tr>
  <td><b><%= anOrder.getAlbum() %></b></td>
@@ -31,7 +32,6 @@
  <td><b><%= anOrder.getCountry() %></b></td>
  <td><b><%= anOrder.getPrice() %></b></td>
  <td><b><%= anOrder.getQuantity() %></b></td>
- <%= discostotales = discostotales + anOrder.getQuantity() %>
  </tr>
  <%
   }
