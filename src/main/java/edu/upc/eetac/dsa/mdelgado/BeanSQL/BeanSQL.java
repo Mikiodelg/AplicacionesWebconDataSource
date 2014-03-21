@@ -40,9 +40,9 @@ public String GetCDs(){
 		rsListaRegistros = scSQL.executeQuery("SELECT * FROM cds");
 		while (rsListaRegistros.next()) {
 			options = options + "<option>";
-			options = options + rsListaRegistros.getString("Autor");
-			options = options + " | ";
 			options = options + rsListaRegistros.getString("Disco");
+			options = options + " | ";
+			options = options + rsListaRegistros.getString("Autor");
 			options = options + " | ";
 			options = options + rsListaRegistros.getString("Pais");
 			options = options + " | ";
@@ -75,16 +75,6 @@ public String GetCDs(){
 		}
 		
 		try {
-			/*
-			Statement scSQL;
-			conConexion = ds.getConnection();
-			scSQL = conConexion.createStatement();
-			
-			String sql = "INSERT INTO Registro(Cantidad,Total) VALUES(?, ?)";
-			stmt = conConexion.prepareStatement(sql);
-			stmt.setInt(1, cantidad);
-			stmt.setFloat(2, amount);
-			*/
 			conConexion = ds.getConnection();
 			PreparedStatement scSQL = null;
 			String sql = "INSERT INTO Registro(Cantidad,Total) VALUES(?, ?)";

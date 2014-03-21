@@ -1,11 +1,11 @@
 <%@ page session="true" import="java.util.*, shopping.CD, edu.upc.eetac.dsa.mdelgado.BeanSQL.BeanSQL" %>
 <html>
 <head>
-<title>Music Without Borders Checkout</title>
+<title>Disco's Stu - Tus discos Stu-Pendos</title>
 </head>
-<body bgcolor="#33CCFF">
+<body bgcolor="#FF66CC">
  <font face="Times New Roman,Times" size=+3>
-  Music Without Borders Checkout
+  <b>Disco's Stu - Tus discos Stu-Pendos</b>
  </font>
  <hr><p>
  <center>

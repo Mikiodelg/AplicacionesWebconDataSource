@@ -4,11 +4,11 @@ import="edu.upc.eetac.dsa.mdelgado.BeanSQL.BeanSQL"
 %>
 <html>
 <head>
- <title>Music Without Borders</title>
+ <title>Disco's Stu - Tus discos Stu-Pendos</title>
 </head>
-<body bgcolor="#33CCFF">
- <font face="Times New Roman,Times" size="+3">
-  Music Without Borders
+<body bgcolor="#FF66CC">
+ <font face="Times New Roman,Times" size="+6">
+  <b>Disco's Stu - Tus discos Stu-Pendos</b>
  </font>
  <hr><p>
  <center>
